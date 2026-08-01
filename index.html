@@ -16,17 +16,53 @@
     <meta name="robots" content="index, follow">
 
     <!-- Structured Data (Schema.org) -->
+<!-- Structured Data (Schema.org) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Adrian Rizeanu",
-  "jobTitle": "Independent Android Application Developer",
-  "url": "https://adrianrizeanu.github.io/",
-  "sameAs": [
-    "https://github.com/adrianrizeanu"
-  ],
-  "knowsAbout": ["Android Development", "Kotlin", "Jetpack Compose"]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://adrianrizeanu.github.io/#person",
+      "name": "Adrian Rizeanu",
+      "jobTitle": "Independent Android Application Developer",
+      "url": "https://adrianrizeanu.github.io/",
+      "sameAs": [
+        "https://github.com/adrianrizeanu"
+      ],
+      "knowsAbout": ["Android Development", "Kotlin", "Jetpack Compose"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://adrianrizeanu.github.io/#liveflag",
+      "name": "LiveFlag",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "MobileApplication",
+      "author": {
+        "@id": "https://adrianrizeanu.github.io/#person"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://adrianrizeanu.github.io/#mytasklist",
+      "name": "MyTaskList",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "UtilitiesApplication",
+      "author": {
+        "@id": "https://adrianrizeanu.github.io/#person"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://adrianrizeanu.github.io/#myinventory",
+      "name": "MyInventory",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "BusinessApplication",
+      "author": {
+        "@id": "https://adrianrizeanu.github.io/#person"
+      }
+    }
+  ]
 }
 </script>
 
@@ -42,17 +78,8 @@
     <meta property="twitter:title" content="Adrian Rizeanu — Android Developer">
     <meta property="twitter:description" content="Explore Android applications built with Jetpack Compose: MyTaskList, MyInventory, and LiveFlag.">
 
-    <!-- Google Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Adrian Rizeanu",
-      "jobTitle": "Independent Android Application Developer",
-      "url": "https://adrianrizeanu.github.io/",
-      "knowsAbout": ["Android Development", "Jetpack Compose", "Kotlin", "Software Engineering"]
-    }
-    </script>
+    
+    
 
     <style>
         body {
