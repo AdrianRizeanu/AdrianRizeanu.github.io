@@ -1,8 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta name="google-site-verification" content="STRING_OF_NUMBERS_AND_LETTERS" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -15,54 +16,55 @@
     <meta name="robots" content="index, follow">
 
     <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
+<!-- Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://adrianrizeanu.github.io/#person",
-          "name": "Adrian Rizeanu",
-          "jobTitle": "Independent Android Application Developer",
-          "url": "https://adrianrizeanu.github.io/",
-          "sameAs": [
-            "https://github.com/adrianrizeanu"
-          ],
-          "knowsAbout": ["Android Development", "Kotlin", "Jetpack Compose"]
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://adrianrizeanu.github.io/#liveflag",
-          "name": "LiveFlag",
-          "operatingSystem": "ANDROID",
-          "applicationCategory": "MobileApplication",
-          "author": {
-            "@id": "https://adrianrizeanu.github.io/#person"
-          }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://adrianrizeanu.github.io/#mytasklist",
-          "name": "MyTaskList",
-          "operatingSystem": "ANDROID",
-          "applicationCategory": "UtilitiesApplication",
-          "author": {
-            "@id": "https://adrianrizeanu.github.io/#person"
-          }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://adrianrizeanu.github.io/#myinventory",
-          "name": "MyInventory",
-          "operatingSystem": "ANDROID",
-          "applicationCategory": "BusinessApplication",
-          "author": {
-            "@id": "https://adrianrizeanu.github.io/#person"
-          }
-        }
-      ]
+      "@type": "Person",
+      "@id": "https://adrianrizeanu.github.io/#person",
+      "name": "Adrian Rizeanu",
+      "jobTitle": "Independent Android Application Developer",
+      "url": "https://adrianrizeanu.github.io/",
+      "sameAs": [
+        "https://github.com/adrianrizeanu"
+      ],
+      "knowsAbout": ["Android Development", "Kotlin", "Jetpack Compose"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://adrianrizeanu.github.io/#liveflag",
+      "name": "LiveFlag",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "MobileApplication",
+      "author": {
+        "@id": "https://adrianrizeanu.github.io/#person"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://adrianrizeanu.github.io/#mytasklist",
+      "name": "MyTaskList",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "UtilitiesApplication",
+      "author": {
+        "@id": "https://adrianrizeanu.github.io/#person"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://adrianrizeanu.github.io/#myinventory",
+      "name": "MyInventory",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "BusinessApplication",
+      "author": {
+        "@id": "https://adrianrizeanu.github.io/#person"
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Open Graph / Facebook / WhatsApp Preview Tags -->
     <meta property="og:type" content="website">
@@ -75,6 +77,9 @@
     <meta property="twitter:url" content="https://adrianrizeanu.github.io/">
     <meta property="twitter:title" content="Adrian Rizeanu — Android Developer">
     <meta property="twitter:description" content="Explore Android applications built with Jetpack Compose: MyTaskList, MyInventory, and LiveFlag.">
+
+    
+    
 
     <style>
         body {
@@ -112,40 +117,18 @@
         }
         .card h2 { margin-top: 0; color: #0366d6; }
         .card p { color: #444; line-height: 1.5; }
-        
-        /* Container for side-by-side action buttons */
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
         .btn {
-            display: block;
+            display: inline-block;
+            background-color: #0070ba;
+            color: white;
             padding: 10px 16px;
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
             text-align: center;
-            transition: background-color 0.2s ease;
+            margin-top: 15px;
         }
-
-        .btn-paypal {
-            background-color: #0070ba;
-            color: white;
-        }
-        .btn-paypal:hover { 
-            background-color: #005ea6; 
-        }
-
-        .btn-github {
-            background-color: #24292e;
-            color: white;
-        }
-        .btn-github:hover { 
-            background-color: #1b1f23; 
-        }
+        .btn:hover { background-color: #005ea6; }
     </style>
 </head>
 <body>
@@ -156,40 +139,28 @@
     </header>
 
     <div class="grid">
-        <!-- MyTaskList Card -->
         <div class="card">
             <div>
                 <h2>MyTaskList</h2>
                 <p>A streamlined task management app built with Jetpack Compose to organize your daily priorities effortlessly.</p>
             </div>
-            <div class="btn-group">
-                <a href="https://github.com/adrianrizeanu" target="_blank" class="btn btn-github">View on GitHub</a>
-                <a href="https://www.paypal.com/ncp/payment/N7AJH62SLMBU6" target="_blank" class="btn btn-paypal">Buy MyTaskList App</a>
-            </div>
+            <a href="https://www.paypal.com/ncp/payment/N7AJH62SLMBU6" target="_blank" class="btn">Buy MyTaskList App</a>
         </div>
 
-        <!-- MyInventory Card -->
         <div class="card">
             <div>
                 <h2>MyInventory</h2>
                 <p>Structured inventory tracking application designed to help manage repos, stock levels, and item views with precision.</p>
             </div>
-            <div class="btn-group">
-                <a href="https://github.com/adrianrizeanu" target="_blank" class="btn btn-github">View on GitHub</a>
-                <a href="https://www.paypal.com/ncp/payment/XQ4GR7WVH4MPN" target="_blank" class="btn btn-paypal">Buy MyInventory App</a>
-            </div>
+            <a href="https://www.paypal.com/ncp/payment/XQ4GR7WVH4MPN" target="_blank" class="btn">Buy MyInventory App</a>
         </div>
 
-        <!-- LiveFlag Card -->
         <div class="card">
             <div>
                 <h2>LiveFlag</h2>
                 <p>A real-time developer utility that identifies whether web URLs are rendering live network streams or cached local data.</p>
             </div>
-            <div class="btn-group">
-                <a href="https://github.com/adrianrizeanu" target="_blank" class="btn btn-github">View on GitHub</a>
-                <a href="https://www.paypal.com/ncp/payment/KTUV93BF5XBRY" target="_blank" class="btn btn-paypal">Buy LiveFlag App</a>
-            </div>
+            <a href="https://www.paypal.com/ncp/payment/KTUV93BF5XBRY" target="_blank" class="btn">Buy LiveFlag App</a>
         </div>
     </div>
 
